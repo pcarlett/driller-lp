@@ -203,9 +203,9 @@ void setupLP(CEnv env, Prob lp, int & numVars) {
 		
 			for(int j = 0; j < n; j++) {
 				if(C[i+j*n]) {
-					rmatind.push_back(j*n+i);
+					rmatind.push_back(i+j*n);
 					rmatval.push_back(1);
-					cout << "+ y_" << j+1 << i+1 << " ";
+					cout << "+ y_" << i+1 << j+1 << " ";
 				}
 
 			}

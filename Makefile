@@ -14,6 +14,9 @@ OBJ = main.o
 main: $(OBJ)
 		$(CC) $(CPPFLAGS) $(OBJ) -o main -L$(CPX_LIBDIR) $(CPX_LDFLAGS)
 
+copy:
+		cp driller-extended.cpp main.cpp
+
 clean:
 		rm -rf $(OBJ) main
 
